@@ -1,0 +1,8 @@
+*.exe
+*.msi
+.terraform/
+.terraform*
+components/
+*tfstate*
+tmp/
+*tfplan*

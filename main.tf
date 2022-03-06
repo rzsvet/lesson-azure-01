@@ -193,7 +193,7 @@ resource "azurerm_dev_test_global_vm_shutdown_schedule" "rg" {
 }
 
 resource "azurerm_virtual_machine_extension" "dev" {
-  name                 = "winrm"
+  name                 = "InitialScript"
   virtual_machine_id   = azurerm_windows_virtual_machine.dev.id
   publisher            = "Microsoft.Compute"
   type                 = "CustomScriptExtension"
